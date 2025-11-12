@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
+<!--
 TODO: Change the background color for each device
 [lightsalmon] Mobile Devices: 319px — 480px
 [powderblue] iPads and Tablets: 481px — 1200px
@@ -15,12 +15,41 @@ TODO: Change the background color for each device
   <title>Media Query</title>
   <style>
     body {
-      background-color: aquamarine;
+      background-color: #fff;
+    }
+
+    /* mobile */
+    @media (max-width:480px) {
+      body {
+        background-color: lightsalmon;
+      }
+    }
+
+    /* ipad */
+    @media (min-width:481px) and (max-width:1200px) {
+      body {
+        background-color: powderblue;
+      }
+    }
+
+    /* laptop */
+    @media (min-width:1201px) and (max-width:1600px) {
+      body {
+        background-color: limegreen;
+      }
+    }
+
+    /* televesion */
+    @media (min-width:1601px) {
+      body {
+        background-color: seagreen;
+      }
     }
   </style>
 </head>
 
 <body>
+  <h1>Hello World</h1>
 </body>
 
 </html>
